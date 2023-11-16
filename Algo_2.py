@@ -1,4 +1,4 @@
-import np
+import numpy as np
 import random
 def cal_pop_fitness(new_population, name, num_of_letters):
     #This function calculates the fitness value of each solution in the current Population
