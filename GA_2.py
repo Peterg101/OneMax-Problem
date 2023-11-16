@@ -1,4 +1,4 @@
-import numpy 
+import numpy as np 
 import Algo_2
 import random
 
@@ -29,9 +29,7 @@ This corresponds to the number of chromosones (sol_per_pop), multiplied by the n
 """
 #Creating the initial population.
 
-new_population = numpy.random.choice(list(alphabet), size=pop_size)
-#print(new_population)
-#print(new_population.shape[1])
+new_population = np.random.choice(list(alphabet), size=pop_size)
 #Stating the number of generations
 
 num_generations=int(input("How many generations do you want to run through? "))
@@ -57,8 +55,6 @@ for generation in range(num_generations+1):
     new_population[0:parents.shape[0], :] = parents
     new_population[parents.shape[0]:, :] = offspring_mutation
 
-#The best result in the current iteration.
-    #print("The best result so far is:")
-    #print(parents[0])
+
     
 
