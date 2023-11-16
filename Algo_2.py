@@ -89,7 +89,7 @@ def crossover(parents, offspring_size):
         offspring[k, 0:crossover_point] = parents[parent1_idx, 0:crossover_point]
         offspring[k, crossover_point:] = parents[parent2_idx, crossover_point:]
     return offspring
-    print(offspring)
+
 def mutation(offspring_crossover, alphabet, num_of_letters_1):
     #Mutation changes a single gene in each offspring randomly.
     for i in range(offspring_crossover.shape[0]):
